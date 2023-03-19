@@ -1,15 +1,14 @@
+import { Container, Typography } from '@mui/material';
 import React from 'react';
 
 const Footer = () => {
     return (
-        <div>
-            <div className='footer'>
-             <h6><a href='www.instagram.com'>Instagram</a></h6>
-            <h6><a href='www.facebook.com'>Facebook</a></h6>
-            <h6><a href='youtube.com'>Youtube</a></h6>
-            <h6>socials</h6>
-            </div>
-        </div>
+        <Container sx={{bgcolor:'tomato',height:'100vh',m:0 }} >
+            <Typography sx={{p:1}} variant='h1' > 
+                hi
+            </Typography> 
+           
+        </Container>
     );
 }
 

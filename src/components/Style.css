@@ -1,0 +1,9 @@
+.footer{
+    background-color: black;
+}
+.logo{
+    margin-top: 3px;
+    height:max-content;
+    justify-content: space-between;
+    margin-bottom: 0;
+}
