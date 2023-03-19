@@ -1,9 +1,22 @@
-.footer{
+#footer-container{
+    padding: 5px;
+    display: flex;
+    flex-direction: row;
     background-color: black;
+    justify-content: flex-end;
+    height: 70px;
 }
-.logo{
-    margin-top: 3px;
-    height:max-content;
-    justify-content: space-between;
-    margin-bottom: 0;
+.product-img{
+    width: 200px;
+}
+
+.card-div{
+    margin: 35px;
+    display: flex;
+    width: fit-content;
+    flex-wrap: wrap;
+
+}
+.product-button{
+    background-color: blue;
 }
