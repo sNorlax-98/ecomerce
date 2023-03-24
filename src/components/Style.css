@@ -17,6 +17,7 @@
     flex-wrap: wrap;
 
 }
-.product-button{
-    background-color: blue;
+
+.flex-inline{
+    display: inline-flex;
 }

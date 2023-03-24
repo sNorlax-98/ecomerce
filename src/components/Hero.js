@@ -1,9 +1,10 @@
-import { Container } from '@mui/system';
+
 import React from 'react';
 import Card from './Card';
-import Data from './Data';
+
 
 const Hero = () => {
+    const [cart,setCart] = React.useState(0)
     return (
         <div>
             <Card/>

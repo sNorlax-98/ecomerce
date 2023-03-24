@@ -4,9 +4,11 @@ import Home from './Home';
 import Contact from './Contact';
 import About from './About';
 import Cart from './Cart';
+import CartState from './context/CartState';
 
 function App() {
   return (
+    <CartState>
     <BrowserRouter>
     <Routes>
       <Route path="/" element={<Home/>} />
@@ -15,6 +17,7 @@ function App() {
       <Route path="cart" element={<Cart/>} />
     </Routes>
     </BrowserRouter>
+    </CartState>
   );
 }
 
