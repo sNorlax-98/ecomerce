@@ -1,23 +1,22 @@
-#footer-container{
-    padding: 5px;
-    display: flex;
-    flex-direction: row;
-    background-color: black;
-    justify-content: flex-end;
-    height: 70px;
-}
-.product-img{
-    width: 200px;
-}
+.navbar {
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0,0,0,.1);
+  }
+  
+  .navbar img {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  .navbar .nav-link {
+    color: #333;
+    font-size: 16px;
+    font-weight: bold;
+    text-transform: uppercase;
+  }  
 
-.card-div{
-    margin: 35px;
+
+  .card-div{
     display: flex;
-    width: fit-content;
     flex-wrap: wrap;
-
-}
-
-.flex-inline{
-    display: inline-flex;
-}
+  }

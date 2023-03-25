@@ -9,21 +9,27 @@ const Cart = () => {
     let b = useContext(CartContext)
     console.log(b.cart)
     return (
-        <div className='card-div'>
+            <>
             <Header/>
-            <div><h1>Cart</h1></div>
+            <div className='card-div'>
             {Data.map(d=>{
                if (b.cart[d.id]>0)
-               return <div className="card " style={{width: "18rem"}}>
-               <img src={d.img} className="card-img-top product-img" alt="..."/>
+               return <div className='w-25 h-25'>
+               <div className="card" style={{width: "18rem"}}>
+               <img src={d.img} className="card-img-top img-thumbnail w-50" alt="..."/>
                <div className="card-body">
-                 <h5 className="card-title">{d.name}</h5>
-                 <p className="card-text">{d.description}</p>
-                 <button  onClick={()=>removeFromCart(d.id)} className="btn btn-primary">Remove from cart</button>
+                   <h5 className="card-title">{d.name}</h5>
+                   <p className="card-text">{d.description}.</p>
+                   <div className='btn-group'>
+                   <button className="btn btn-danger btn-sm "  onClick={()=>removeFromCart(d.id)}>Remove</button>
+                   </div>
                </div>
-             </div>
+               </div>
+              </div>
+            return null
             })}
-        </div>
+            </div>
+        </>
     );
 }
 
